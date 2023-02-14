@@ -13,10 +13,10 @@ const Feed = () => {
         setVideos(null);
 
         fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
-        .then(data => {
-            setVideos(data.items)
-            console.log(data);
-        })
+            .then(data => {
+                setVideos(data.items)
+                console.log(data);
+            })
     }, [selectedCategory])
 
     return (
