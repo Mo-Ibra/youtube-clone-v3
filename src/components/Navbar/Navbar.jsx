@@ -1,4 +1,4 @@
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 // import { logo } from '../../utils/constants';
@@ -17,7 +17,9 @@ const Navbar = () => {
             }}
         >
             <Link to="/" style={{ display: "flex", alignItems: "center" }}>
-                {/* <img src={logo} alt="logo" height={45} /> */}
+                <Typography variant='h4' fontWeight="bold" sx={{ color: 'white' }}>
+                    You<Typography variant='span' color="#fc1503">Tube</Typography>
+                </Typography>
             </Link>
             <SearchBar />
         </Stack>
